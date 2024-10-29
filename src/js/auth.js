@@ -24,5 +24,5 @@ firebase.auth().onAuthStateChanged((user) => {
 function clearLocalStorage() {
     localStorage.removeItem("user");
     localStorage.removeItem("classAdded");
-    localStorage.removeItem("firebase:host:join-19628-default-rtdb.firebaseio.com");
+    localStorage.removeItem("firebase:host:join-2ee9e-default-rtdb.europe-west1.firebasedatabase.app/");
 }

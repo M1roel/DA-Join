@@ -1,4 +1,4 @@
-let BASE_URL = "https://join-19628-default-rtdb.firebaseio.com";
+let BASE_URL = "https://join-2ee9e-default-rtdb.europe-west1.firebasedatabase.app/";
 let subtasksArray = [];
 let subtasksStatusArray = [];
 let prioArray = [];

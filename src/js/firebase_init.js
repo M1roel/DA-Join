@@ -1,13 +1,14 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyDZv_Y7rO7cD6zajbn8N2xjTCRXirodJ_w",
-    authDomain: "join-19628.firebaseapp.com",
-    databaseURL: "https://join-19628-default-rtdb.firebaseio.com/",
-    projectId: "join-19628",
-    storageBucket: "join-19628.appspot.com",
-    messagingSenderId: "828382956671",
-    appId: "1:828382956671:web:f180ef915a3607d86bc34a",
-  };
-  
-  if (!firebase.apps.length) {
-    firebase.initializeApp(firebaseConfig);
-  }
+  apiKey: "AIzaSyAHxp8mS5rkKRPAmEbvzthcTNu6-0EhWZ4",
+  authDomain: "join-2ee9e.firebaseapp.com",
+  databaseURL: "https://join-2ee9e-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "join-2ee9e",
+  storageBucket: "join-2ee9e.appspot.com",
+  messagingSenderId: "556856087583",
+  appId: "1:556856087583:web:9fb061542276ce800e312a",
+  measurementId: "G-BRE1SCSM0J",
+};
+
+if (!firebase.apps.length) {
+  firebase.initializeApp(firebaseConfig);
+}
