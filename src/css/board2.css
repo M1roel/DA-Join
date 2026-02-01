@@ -192,7 +192,7 @@
   font-weight: 400;
   font-size: 20px;
   appearance: none;
-  background-image: url("/public/img/arrow_drop_downaa.png");
+  background-image: url("public/img/arrow_drop_downaa.png");
   background-repeat: no-repeat;
   background-position: calc(100% - 16px) center;
   background-size: 24px;

@@ -83,9 +83,9 @@ async function greetingUser(hour, greetingElement, greetingElementName) {
  * @param {number} hour - The current hour of the day.
  * @param {HTMLElement} greetingElement - The HTML element to display the greeting.
  * @param {string} user - The name of the guest user.
- * @param {HTMLElement} userImgElement - The img element to display the profile image.
+ * @param {HTMLElement} userimgElement - The img element to display the profile image.
  */
-function greetingGuest(hour, greetingElement, user, userImgElement) {
+function greetingGuest(hour, greetingElement, user, userimgElement) {
   let greetingMessage = "";
   if (hour > 6 && hour < 12) {
     greetingMessage = "Good morning";
@@ -98,7 +98,7 @@ function greetingGuest(hour, greetingElement, user, userImgElement) {
   greetingElement.textContent = greetingMessage;
 
   let userImage = generateProfileImage(user);
-  userImgElement.src = userImage;
+  userimgElement.src = userImage;
 }
 
 /**

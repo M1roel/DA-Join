@@ -2,23 +2,24 @@
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
+    <base href="/projekte/join/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="img/favicon.png" type="image/png" />
-    <link rel="stylesheet" href="/src/css/style.css" />
-    <link rel="stylesheet" href="/src/css/utils.css" />
-    <link rel="stylesheet" href="../src/css/utils2.css" />
-    <link rel="stylesheet" href="/src/css/signup.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/utils.css" />
+    <link rel="stylesheet" href="src/css/utils2.css" />
+    <link rel="stylesheet" href="src/css/signup.css" />
     <link rel="icon" href="./img/user_logo.png" type="image/png" />
     <title>Join Sign Up</title>
   </head>
   <body>
     <section class="main-signup d-flex-center flex-d-col">
       <div class="signup-logo" id="signup-logo">
-        <img src="/public/img/user_logo.png" alt="join logo" />
+        <img src="public/img/user_logo.png" alt="join logo" />
       </div>
       <div class="signup-field d-flex-center flex-d-col">
         <div class="signup-arrow">
-          <img src="/public/img/arrow-left-line.png" alt="zurück pfeil" onclick="home()" />
+          <img src="public/img/arrow-left-line.png" alt="zurück pfeil" onclick="home()" />
         </div>
         <span class="signup-headline fs-61 fw-700">Sign up</span>
         <div class="signup-headline-divider"></div>
@@ -26,28 +27,28 @@
           <div class="signup-input d-flex-center flex-d-col gap-20 fw-700">
             <div class="input-name">
               <input type="text" required placeholder="Name" id="name" />
-              <img src="/public/img/people.png" alt="user logo" />
+              <img src="public/img/people.png" alt="user logo" />
             </div>
             <div class="input-mail">
               <input type="email" required placeholder="Email" id="mail" />
-              <img src="/public/img/envelope.png" alt="briefumschlag logo" />
+              <img src="public/img/envelope.png" alt="briefumschlag logo" />
             </div>
             <div id="validation-email-message" class="d-none d-flex-center fs-08"></div>
             <div class="input-password">
               <input type="password" required placeholder="Password" id="password" />
-              <img src="/public/img/lock.png" class="password-toggle" id="toggle-password" alt="schloss logo" />
+              <img src="public/img/lock.png" class="password-toggle" id="toggle-password" alt="schloss logo" />
             </div>
             <div id="validation-pw-message" class="d-none d-flex-center fs-08"></div>
             <div class="input-confirm-password">
               <input type="password" required placeholder="Confirm Password" id="confirm-password" />
-              <img src="/public/img/lock.png" class="password-toggle" id="toggle-confirm-password" alt="schloss logo" />
+              <img src="public/img/lock.png" class="password-toggle" id="toggle-confirm-password" alt="schloss logo" />
             </div>
             <div class="error-message" id="error-message"></div>
           </div>
           <div id="validation-message" class="d-none d-flex-center fs-12"></div>
           <div class="signup-checkbox d-flex-center">
             <input type="checkbox" id="checkbox" />
-            <label for="checkbox">I accept the&nbsp;</label><a class="privacy-link" href="/public/datenschutz.html">Privacy Policy</a>
+            <label for="checkbox">I accept the&nbsp;</label><a class="privacy-link" href="public/datenschutz.html">Privacy Policy</a>
           </div>
           <div class="signup-btn d-flex-center">
             <button class="submit-signup-btn fw-700 fs-21 d-flex-center pointer" id="success" class="disabled" disabled>Sign up</button>
@@ -66,11 +67,11 @@
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
-    <script src="/src/js/signup.js" defer></script>
-    <script src="/src/js/firebase_init.js"></script>
-    <script src="/src/js/variables.js"></script>
-    <script src="/src/js/contactsapi.js"></script>
-    <script src="/src/js/contactsrender.js"></script>
-    <script src="/src/js/contactsinit.js"></script>
+    <script src="src/js/signup.js" defer></script>
+    <script src="src/js/firebase_init.js"></script>
+    <script src="src/js/variables.js"></script>
+    <script src="src/js/contactsapi.js"></script>
+    <script src="src/js/contactsrender.js"></script>
+    <script src="src/js/contactsinit.js"></script>
   </body>
 </html>

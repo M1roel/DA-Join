@@ -2,32 +2,33 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <base href="/projekte/join/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/css/style.css" />
-    <link rel="stylesheet" href="../src/css/board.css" />
-    <link rel="stylesheet" href="../src/css/board2.css" />
-    <link rel="stylesheet" href="/src/css/boardmedia.css" />
-    <link rel="stylesheet" href="../src/css/addtaskmedia.css" />
-    <link rel="stylesheet" href="../src/css/addTask2.css" />
-    <link rel="stylesheet" href="../src/css/utils.css" />
-    <link rel="stylesheet" href="../src/css/utils2.css" />
-    <link rel="stylesheet" href="../src/css/addTask.css" />
-    <link rel="stylesheet" href="../src/css/edittask.css" />
-    <link rel="stylesheet" href="../src/css/boardaddtask.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/board.css" />
+    <link rel="stylesheet" href="src/css/board2.css" />
+    <link rel="stylesheet" href="src/css/boardmedia.css" />
+    <link rel="stylesheet" href="src/css/addtaskmedia.css" />
+    <link rel="stylesheet" href="src/css/addTask2.css" />
+    <link rel="stylesheet" href="src/css/utils.css" />
+    <link rel="stylesheet" href="src/css/utils2.css" />
+    <link rel="stylesheet" href="src/css/addTask.css" />
+    <link rel="stylesheet" href="src/css/edittask.css" />
+    <link rel="stylesheet" href="src/css/boardaddtask.css" />
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
-    <script src="/src/js/firebase_init.js"></script>
-    <script src="/src/js/authCheck.js"></script>
-    <script src="/src/js/auth.js"></script>
-    <script src="/src/js/script.js"></script>
-    <script src="/src/js/boardRenderFunc.js"></script>
-    <script src="/src/js/editTaskBoard.js"></script>
-    <script src="/src/js/addTask.js"></script>
-    <script src="/src/js/boardaddtask.js"></script>
-    <script src="/src/js/boardaddtaskrender.js"></script>
-    <script src="/src/js/boardaddtasksub.js"></script>
-    <script src="/src/js/openTaskBoard.js"></script>
+    <script src="src/js/firebase_init.js"></script>
+    <script src="src/js/authCheck.js"></script>
+    <script src="src/js/auth.js"></script>
+    <script src="src/js/script.js"></script>
+    <script src="src/js/boardRenderFunc.js"></script>
+    <script src="src/js/editTaskBoard.js"></script>
+    <script src="src/js/addTask.js"></script>
+    <script src="src/js/boardaddtask.js"></script>
+    <script src="src/js/boardaddtaskrender.js"></script>
+    <script src="src/js/boardaddtasksub.js"></script>
+    <script src="src/js/openTaskBoard.js"></script>
     
 
     <link rel="icon" href="./img/user_logo.png" type="image/png" />
@@ -41,7 +42,7 @@
         <div class="responsive-board-head">
           <h1 class="board-headline">Board</h1>
           <button onclick="changeSite('addTask.html')" class="add-task-button-head">
-            <img src="../public/img/add.png" />
+            <img src="public/img/add.png" />
           </button>
         </div>
         <div class="search-task-container">
@@ -52,7 +53,7 @@
           </form>
           <button onclick="openAddForm(event)" class="add-task-button">
             <span class="board-addtask-btn">Add Task</span>
-            <img src="../public/img/add.png" />
+            <img src="public/img/add.png" />
           </button>
         </div>
       </section>
@@ -189,7 +190,7 @@
                 class="add-task-prio-button"
               >
                 <span>Urgent</span>
-                <img src="../public/img/Prio alta.png" alt="" />
+                <img src="public/img/Prio alta.png" alt="" />
               </button>
               <button
                 onclick="prio2(2)"
@@ -210,7 +211,7 @@
                 class="add-task-prio-button"
               >
                 <span>Low</span>
-                <img src="../public/img/Prio baja.png" />
+                <img src="public/img/Prio baja.png" />
               </button>
             </div>
 
@@ -247,7 +248,7 @@
           </button>
           <button class="add-task-create-button" id="add-task-button">
             <span>Create Task</span>
-            <img src="../public/img/check.svg" />
+            <img src="public/img/check.svg" />
           </button>
         </div>
       </div>

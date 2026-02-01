@@ -2,12 +2,13 @@
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
+    <base href="/projekte/join/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="img/favicon.png" type="image/png" />
-    <link rel="stylesheet" href="/src/css/utils.css" />
-    <link rel="stylesheet" href="/src/css/utils2.css" />
-    <link rel="stylesheet" href="/src/css/style.css" />
-    <link rel="stylesheet" href="/src/css/login.css" />
+    <link rel="stylesheet" href="src/css/utils.css" />
+    <link rel="stylesheet" href="src/css/utils2.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/login.css" />
     <title>Join Login</title>
   </head>
   <body>
@@ -43,12 +44,12 @@
           <div class="login-input d-flex-center flex-d-col gap-20 fw-700">
             <div class="input-mail">
               <input type="email" required placeholder="Email" id="email" />
-              <img src="/public/img/envelope.png" alt="briefumschlag logo" />
+              <img src="public/img/envelope.png" alt="briefumschlag logo" />
             </div>
             <div id="validation-mail-message" class="d-none d-flex-center fs-08"></div>
             <div class="input-password">
               <input type="password" required placeholder="Password" id="password-login" />
-              <img src="/public/img/lock.png" class="password-toggle" id="toggle-password-login" alt="schloss logo" />
+              <img src="public/img/lock.png" class="password-toggle" id="toggle-password-login" alt="schloss logo" />
             </div>
             <div class="error-message d-flex-center d-none" id="error-message">Check your email and password. Please try again.</div>
           </div>
@@ -71,8 +72,8 @@
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
-    <script src="/src/js/firebase_init.js"></script>
-    <script src="/src/js/login.js"></script>
-    <script src="/src/js/ui.js"></script>
+    <script src="src/js/firebase_init.js"></script>
+    <script src="src/js/login.js"></script>
+    <script src="src/js/ui.js"></script>
   </body>
 </html>

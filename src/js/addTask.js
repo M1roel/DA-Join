@@ -111,7 +111,7 @@ async function checkboxInit(names, imageUrls) {
 function checkBoxRender(index, imgSrc, element) {
   return `
     <label class="checkBoxFlex" for="checkbox-${index}" id="checkboxColor${index}">
-        <div class="checkBoxImg">
+        <div class="checkBoximg">
             <img id="assignedToUserImageBorder${index}" src="${imgSrc}" alt="" />
             ${element}
         </div>

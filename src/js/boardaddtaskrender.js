@@ -9,7 +9,7 @@
 function checkBoxRender2(index, imgSrc, element) {
     return `
       <label class="checkBoxFlex" for="checkbox2-${index}" id="checkboxColor2${index}">
-          <div class="checkBoxImg">
+          <div class="checkBoximg">
               <img id="assignedToUserImageBorde2${index}" src="${imgSrc}" alt="" />
               ${element}
           </div>
@@ -28,11 +28,11 @@ function checkBoxRender2(index, imgSrc, element) {
     document.getElementById("subtasks-board").classList.add("subtasks-input");
     let position = document.getElementById("subtasksControl2");
     position.innerHTML = `<button onclick="resetSubtaskInput2()" type="button" class="subtask-button2">
-              <img class="img-24 " src="../public/img/closeAddTask.png" alt="Reset">
+              <img class="img-24 " src="public/img/closeAddTask.png" alt="Reset">
           </button>
           <div class="seperator-subtasks"></div>
           <button onclick="addSubtask2()" type="button" class="subtask-button2">
-              <img class="img-24 " src="../public/img/checkAddTask.png" alt="Add">
+              <img class="img-24 " src="public/img/checkAddTask.png" alt="Add">
           </button>`;
   }
   
@@ -63,9 +63,9 @@ function checkBoxRender2(index, imgSrc, element) {
                  <li id="supplementarySubtask2${index}" class="d-flex-between subtasks-edit bradius8">
             <span>${element}</span>
             <div class="d-flex item-center">
-                <img class="pointer img-24 p-4 " onclick="deleteSubtask2(${index})" src="../public/img/delete.png">
+                <img class="pointer img-24 p-4 " onclick="deleteSubtask2(${index})" src="public/img/delete.png">
                 <div class="seperator-subtasks"></div>
-                <img class="pointer img-24 p-4 " onclick="editSubtask2(${index})" src="../public/img/edit.png">
+                <img class="pointer img-24 p-4 " onclick="editSubtask2(${index})" src="public/img/edit.png">
             </div>
         </li>`;
       }
@@ -83,9 +83,9 @@ function checkBoxRender2(index, imgSrc, element) {
     return `
     <input class="inputAddTaskSubtasks fs-16" id="inputAddTaskSubtasks2${index}" required minlength="2" class="" value="${arrayPosition}">
     <div class="d-flex item-center">
-        <img class="img-24 pointer p-4" onclick="deleteSubtask2(${index})" src="../public/img/delete.png">
+        <img class="img-24 pointer p-4" onclick="deleteSubtask2(${index})" src="public/img/delete.png">
         <div class="seperator-subtasks"></div>
-        <img class="img-24 pointer p-4" onclick="validateAndFinish2(${index})" src="../public/img/checkAddTask.png" alt="Add">
+        <img class="img-24 pointer p-4" onclick="validateAndFinish2(${index})" src="public/img/checkAddTask.png" alt="Add">
     </div> `;
   }
 

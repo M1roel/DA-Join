@@ -3,23 +3,24 @@
 
 <head>
     <meta charset="UTF-8">
+    <base href="/projekte/join/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/css/style.css">
-    <link rel="stylesheet" href="../src/css/addTask.css">
-    <link rel="stylesheet" href="../src/css/edittask.css">
-    <link rel="stylesheet" href="../src/css/addTask2.css">
-    <link rel="stylesheet" href="../src/css/boardaddtask.css">
-    <link rel="stylesheet" href="../src/css/addtaskmedia.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/addTask.css">
+    <link rel="stylesheet" href="src/css/edittask.css">
+    <link rel="stylesheet" href="src/css/addTask2.css">
+    <link rel="stylesheet" href="src/css/boardaddtask.css">
+    <link rel="stylesheet" href="src/css/addtaskmedia.css">
     <link rel="icon" href="./img/user_logo.png" type="image/png">
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
-    <script src="/src/js/firebase_init.js"></script>
-    <script src="/src/js/authCheck.js"></script>
-    <script src="/src/js/auth.js"></script>
-    <script src="/src/js/addTask.js"></script>
-    <script src="/src/js/script.js"></script>
-    <script src="/src/js/addTaskSubtask.js"></script>
+    <script src="src/js/firebase_init.js"></script>
+    <script src="src/js/authCheck.js"></script>
+    <script src="src/js/auth.js"></script>
+    <script src="src/js/addTask.js"></script>
+    <script src="src/js/script.js"></script>
+    <script src="src/js/addTaskSubtask.js"></script>
     <title>Add Task</title>
 </head>
 
@@ -63,7 +64,7 @@
                         <button onclick="prio(1)" id="prioButton1" value="1" data-prio="urgent" type="button"
                             class="add-task-prio-button">
                             <span>Urgent</span>
-                            <img src="../public/img/Prio alta.png" alt="">
+                            <img src="public/img/Prio alta.png" alt="">
                         </button>
                         <button onclick="prio(2)" id="prioButton2" value="2" data-prio="medium" type="button"
                             class="add-task-prio-button">
@@ -72,7 +73,7 @@
                         <button onclick="prio(3)" id="prioButton3" value="3" data-prio="low" type="button"
                             class="add-task-prio-button">
                             <span>Low</span>
-                            <img src="../public/img/Prio baja.png" alt="">
+                            <img src="public/img/Prio baja.png" alt="">
                         </button>
                     </div>
 
@@ -108,7 +109,7 @@
             </button>
             <button class="add-task-create-button" id="createAdd">
                 <span>Create Task</span>
-                <img src="../public/img/check.svg" alt="">
+                <img src="public/img/check.svg" alt="">
             </button>
         </div>
     </form>

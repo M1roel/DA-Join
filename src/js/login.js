@@ -1,17 +1,17 @@
 function goToPrivacy() {
-  window.location.replace("/public/login-datenschutz.html");
+  window.location.replace("public/login-datenschutz.html");
 }
 
 function goToLegalNotice() {
-  window.location.replace("/public/login-impressum.html");
+  window.location.replace("public/login-impressum.html");
 }
 
 function goToSignUp() {
-  location.replace("/public/signup.html");
+  location.replace("public/signup.html");
 }
 
 function goToSummary() {
-  location.replace("/public/index.html");
+  location.replace("public/index.html");
 }
 
 /**
@@ -131,10 +131,10 @@ document.addEventListener("DOMContentLoaded", function () {
 function updatePasswordVisibility(input, toggle) {
   if (input.type === "password") {
     input.type = "text";
-    toggle.src = "/public/img/password-show.png";
+    toggle.src = "public/img/password-show.png";
   } else {
     input.type = "password";
-    toggle.src = "/public/img/password-hidden.png";
+    toggle.src = "public/img/password-hidden.png";
   }
 }
 
@@ -146,8 +146,8 @@ function updateIconVisibility() {
   const togglePassword = document.getElementById("toggle-password-login");
 
   if (passwordInput.value.length > 0) {
-    togglePassword.src = "/public/img/password-hidden.png";
+    togglePassword.src = "public/img/password-hidden.png";
   } else {
-    togglePassword.src = "/public/img/lock.png";
+    togglePassword.src = "public/img/lock.png";
   }
 }

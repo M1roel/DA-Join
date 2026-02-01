@@ -29,7 +29,7 @@ function positionOfHTMLBlockBoard(
       <div id="parentContainer${index}" draggable="true" ondragstart="startDragging('${taskkeys[index]}', '${index}')" onclick="openTaskToBoardRender('${index}', '${category}', '${description}', '${dueDate}', '${prio}', '${title}', '${boardCategory}', '${assignedTo}', '${subtasks}', '${subtaskStatus}')" class="board-task-container pointer bradius24 d-flex flex-d-col content-even mg-btt25"> 
         <div class="d-flex-between" style="position: relative;">
           <h1 id="categoryColor${index}" class="txt-center fs-16 mg-block-none bradius8 color-wh">${category}</h1>
-          <img src="/public/img/dots.png" id="dots-parent-container${index}" class="dots-parent-container d-none" onclick="toggleElementDropDown(event, '#taskDropdown${index}', 'd-none')">
+          <img src="public/img/dots.png" id="dots-parent-container${index}" class="dots-parent-container d-none" onclick="toggleElementDropDown(event, '#taskDropdown${index}', 'd-none')">
           <div id="taskDropdown${index}" class="task-dropdown d-flex-start flex-d-col p-10 d-none">
             <span>Move to:</span>
             <a href="#" onclick="moveTaskToCategory('${taskkeys[index]}', 'todo', '${index}', '${category}', '${description}', '${dueDate}', '${prio}', '${title}', '${boardCategory}' , '${assignedTo}', '${subtasks}', '${subtaskStatus}')">ToDo</a>
@@ -37,7 +37,7 @@ function positionOfHTMLBlockBoard(
             <a href="#" onclick="moveTaskToCategory('${taskkeys[index]}', 'feedback', '${index}', '${category}', '${description}', '${dueDate}', '${prio}', '${title}', '${boardCategory}' , '${assignedTo}', '${subtasks}', '${subtaskStatus}')">Feedback</a>
             <a href="#" onclick="moveTaskToCategory('${taskkeys[index]}', 'done', '${index}', '${category}', '${description}', '${dueDate}', '${prio}', '${title}', '${boardCategory}' , '${assignedTo}', '${subtasks}', '${subtaskStatus}')">Done</a>
           </div>
-          <img onclick="closeOpenTask(${index})" id="closeOpenTask${index}" class="d-none" src="../public/img/Close.png">
+          <img onclick="closeOpenTask(${index})" id="closeOpenTask${index}" class="d-none" src="public/img/Close.png">
         </div>
         <div class="width220 mg-top-4">
           <h2 class="mg-block-none fs-16 fw-700">${title}</h2> 
@@ -93,13 +93,13 @@ function searchprioBoard(index, prio) {
     let position = document.getElementById(`prioPosition${index}`);
     position.innerHTML = "";
     if (prio == "Urgent") {
-      position.innerHTML = `<img  src="../public/img/Prio alta.png" alt="">`;
+      position.innerHTML = `<img  src="public/img/Prio alta.png" alt="">`;
     } else {
       if (prio == "Medium") {
-        position.innerHTML = `<img  src="../public/img/prioOrange.png" alt="">`;
+        position.innerHTML = `<img  src="public/img/prioOrange.png" alt="">`;
       } else {
         if (prio == "Low") {
-          position.innerHTML = `<img src="../public/img/Prio baja.png" alt="">`;
+          position.innerHTML = `<img src="public/img/Prio baja.png" alt="">`;
         }
       }
     }

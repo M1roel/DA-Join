@@ -8,7 +8,7 @@ function checkAuth() {
     const guestUser = localStorage.getItem("user");
     firebase.auth().onAuthStateChanged(function (user) {
         if (!user && guestUser !== "Guest") {
-            window.location.replace('/public/login.html');
+            window.location.replace('public/login.html');
         }
     });
 }

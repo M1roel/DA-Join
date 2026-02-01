@@ -1,12 +1,12 @@
 @font-face {
   font-family: "Inter";
-  src: url("/src/fonts/inter/inter-v13-latin-regular.woff2") format("woff2");
+  src: url("../fonts/inter/inter-v13-latin-regular.woff2") format("woff2");
   font-weight: 600;
 }
 
 @font-face {
   font-family: "Inter700";
-  src: url("/src/fonts/inter/inter-v13-latin-700.woff2") format("woff2");
+  src: url("../fonts/inter/inter-v13-latin-700.woff2") format("woff2");
   font-weight: 700;
 }
 .checkboxes-hidden {
@@ -143,7 +143,7 @@
   font-weight: 400;
   font-size: 20px;
   appearance: none;
-  background-image: url("/public/img/arrow_drop_downaa.png");
+  background-image: url("public/img/arrow_drop_downaa.png");
   background-repeat: no-repeat;
   background-position: calc(100% - 16px) center;
   background-size: 24px;

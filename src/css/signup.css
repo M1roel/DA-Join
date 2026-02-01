@@ -224,11 +224,11 @@ body {
 }
 
 .password-toggle.show {
-  content: url('/public/img/password-show.png');
+  content: url('public/img/password-show.png');
 }
 
 .password-toggle.hide {
-  content: url('/public/img/password-hidden.png');
+  content: url('public/img/password-hidden.png');
 }
 
 input[type="password"]::-ms-reveal {

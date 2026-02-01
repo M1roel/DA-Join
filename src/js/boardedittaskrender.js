@@ -19,11 +19,11 @@ function showSubtaskControlsEdit(index, subtasks) {
     
     let position = document.getElementById(`subtasksControl${index}`);
     position.innerHTML = `<button onclick="resetSubtaskInputEdit('${index}','${subtasks}')" type="button" class="subtask-button-edit">
-                                <img src="../public/img/closeAddTask.png" alt="Reset">
+                                <img src="public/img/closeAddTask.png" alt="Reset">
                             </button>
                             <div class="seperator-subtasks"></div>
                             <button onclick="addSubtaskEdit('${index}','${subtasks}')" type="button" class="subtask-button-edit">
-                                <img src="../public/img/checkAddTask.png" alt="Add">
+                                <img src="public/img/checkAddTask.png" alt="Add">
                             </button>`;
 }
 
@@ -66,9 +66,9 @@ function editSubtaskHTMLEdit(i, indexHTML, subtask, subtasksEditArrayOrigin, arr
    return`
         <input id="inputEditSubtasks${i}" class="inputAddTaskSubtasks fs-16" value="${arrayPosition}" >
         <div class="d-flex item-center">
-            <img class="img-24 pointer p-4" onclick="deleteSubtaskEdit('${i}','${indexHTML}', '${subtasksEditArrayOrigin}')" src="../public/img/delete.png">
+            <img class="img-24 pointer p-4" onclick="deleteSubtaskEdit('${i}','${indexHTML}', '${subtasksEditArrayOrigin}')" src="public/img/delete.png">
             <div class="seperator-subtasks"></div>
-            <img class="img-24 pointer p-4" onclick="validateAndFinishEdit('${i}','${indexHTML}', '${subtasksEditArrayOrigin}')" src="../public/img/checkAddTask.png" alt="Add">
+            <img class="img-24 pointer p-4" onclick="validateAndFinishEdit('${i}','${indexHTML}', '${subtasksEditArrayOrigin}')" src="public/img/checkAddTask.png" alt="Add">
         </div>`;
 }
 
@@ -132,8 +132,8 @@ function supplementarySubtaskEditHTML(subtask, index, indexHTML, subtasksEditArr
           ${subtask}
         </span>
         <div>
-            <img class="pointer" onclick="deleteSubtaskEdit('${index}','${indexHTML}','${subtask}', '${subtasksEditArrayOrigin}')" src="../public/img/delete.png">
-            <img class="pointer" onclick="editSubtaskEdit('${index}','${indexHTML}','${subtask}', '${subtasksEditArrayOrigin}')" src="../public/img/edit.png">
+            <img class="pointer" onclick="deleteSubtaskEdit('${index}','${indexHTML}','${subtask}', '${subtasksEditArrayOrigin}')" src="public/img/delete.png">
+            <img class="pointer" onclick="editSubtaskEdit('${index}','${indexHTML}','${subtask}', '${subtasksEditArrayOrigin}')" src="public/img/edit.png">
         </div>
     </li>`;
   }
@@ -155,7 +155,7 @@ function supplementarySubtaskEditHTML(subtask, index, indexHTML, subtasksEditArr
   function checkBoxRenderEdit(index, names, urls, indexHTML) {
     return `
       <label class="checkBoxFlex" for="checkbox-${index}" id="checkboxColorEdit${index}">
-          <div class="checkBoxImg">
+          <div class="checkBoximg">
               <img id="assignedToUserImageBorderEdit${index}" src="${urls}" alt="" />
               ${names}
           </div>
@@ -181,7 +181,7 @@ function supplementarySubtaskEditHTML(subtask, index, indexHTML, subtasksEditArr
         <div class="edit-board-form2"> 
           <div class="d-flex-between margin-bt8">
               <h1 id="categoryColorEdit${index}" class=" txt-center fs-16 mg-block-none bradius8 color-wh">${category}</h1>
-              <img onclick="closeOpenTaskEdit(event, ${index})" id="closeOpenTask${index}" class="close-open-task-img" src="../public/img/Close.png">
+              <img onclick="closeOpenTaskEdit(event, ${index})" id="closeOpenTask${index}" class="close-open-task-img" src="public/img/Close.png">
           </div>
           <div class="margin-bt8 full-width">
               <p class="d-flex item-center fs-20 fw-700 mg-block-none color-dg">Title:</p>
@@ -204,7 +204,7 @@ function supplementarySubtaskEditHTML(subtask, index, indexHTML, subtasksEditArr
                         <button onclick="prioEdit(1)" id="prioButtonEdit1" value="1" data-prio="urgent" type="button"
                             class="add-task-prio-button">
                             <span>Urgent</span>
-                            <img src="../public/img/Prio alta.png" alt="">
+                            <img src="public/img/Prio alta.png" alt="">
                         </button>
                         <button onclick="prioEdit(2)" id="prioButtonEdit2" value="2" data-prio="medium" type="button"
                             class="add-task-prio-button">
@@ -213,7 +213,7 @@ function supplementarySubtaskEditHTML(subtask, index, indexHTML, subtasksEditArr
                         <button onclick="prioEdit(3)" id="prioButtonEdit3" value="3" data-prio="low" type="button"
                             class="add-task-prio-button">
                             <span>Low</span>
-                            <img src="../public/img/Prio baja.png" alt="">
+                            <img src="public/img/Prio baja.png" alt="">
                         </button>
               </div>
           </div>
@@ -248,7 +248,7 @@ function supplementarySubtaskEditHTML(subtask, index, indexHTML, subtasksEditArr
             <div class=" d-flex content-even edit-task-button-div">
              <button class="pointer edit-task-button" id="edit-Add-Btn">
                 <span class="fs-16 mg-block-none fs-21 f-weight-700 img-24">Edit</span>
-                <img class="open-task-delete-edit img" src="../public/img/check2.png">
+                <img class="open-task-delete-edit img" src="public/img/check2.png">
              </button> 
             </div>
            

@@ -153,13 +153,13 @@ function searchprioBoardOpen(index, prio) {
   let position = document.getElementById(`prioPositionOpenTask${index}`);
   position.innerHTML = "";
   if (prio == "Urgent") {
-    position.innerHTML = `<img  src="../public/img/Prio alta.png" alt="">`;
+    position.innerHTML = `<img  src="public/img/Prio alta.png" alt="">`;
   } else {
     if (prio == "Medium") {
-      position.innerHTML = `<img  src="../public/img/prioOrange.png" alt="">`;
+      position.innerHTML = `<img  src="public/img/prioOrange.png" alt="">`;
     } else {
       if (prio == "Low") {
-        position.innerHTML = `<img src="../public/img/Prio baja.png" alt="">`;
+        position.innerHTML = `<img src="public/img/Prio baja.png" alt="">`;
       }
     }
   }
@@ -305,7 +305,7 @@ function openTaskToBoardHtml(index, category, description, dueDate, prio, title,
         <div class="task-responsive width445">  
           <div class="d-flex-between margin-bt8">
               <h1 id="categoryColorOpen${index}" class=" txt-center fs-16 mg-block-none bradius8 color-wh">${category}</h1>
-              <img onclick="closeOpenTask(event, ${index})" id="closeOpenTask${index}" class="close-open-task-img" src="../public/img/Close.png">
+              <img onclick="closeOpenTask(event, ${index})" id="closeOpenTask${index}" class="close-open-task-img" src="public/img/Close.png">
           </div>
           <div class="margin-bt8">
                 <h2 class="task-title mg-block-none fw-700 fs-61">${title}</h2>
@@ -334,9 +334,9 @@ function openTaskToBoardHtml(index, category, description, dueDate, prio, title,
               <div class="subtask-scrollbar" id="subtasksBoardOpen${index}"></div>
           <div class="d-flex-end">
             <div class="d-flex item-center">
-              <div onclick="deleteTask(${index})" class="d-flex item-center pointer"><img class="open-task-delete-edit img" src="../public/img/deleteOpenTask.png"><p class="fs-16 mg-block-none">Delete</p></div>
+              <div onclick="deleteTask(${index})" class="d-flex item-center pointer"><img class="open-task-delete-edit img" src="public/img/deleteOpenTask.png"><p class="fs-16 mg-block-none">Delete</p></div>
               <div class="seperator-opentask"></div>
-              <div onclick="EditTaskToBoardRender('${index}', '${category}', '${description}', '${dueDate}', '${prio}', '${title}', '${boardCategory}' , '${assignedTo}', '${subtasks}', '${subtaskStatus}')" class="d-flex item-center pointer"><img class="open-task-delete-edit img" src="../public/img/editOpenTask.png"><p class="fs-16 mg-block-none">Edit</p></div>
+              <div onclick="EditTaskToBoardRender('${index}', '${category}', '${description}', '${dueDate}', '${prio}', '${title}', '${boardCategory}' , '${assignedTo}', '${subtasks}', '${subtaskStatus}')" class="d-flex item-center pointer"><img class="open-task-delete-edit img" src="public/img/editOpenTask.png"><p class="fs-16 mg-block-none">Edit</p></div>
             </div>
           </div>
         </div>  

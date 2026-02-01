@@ -1,5 +1,5 @@
 function home() {
-  window.location.replace("/public/login.html");
+  window.location.replace("public/login.html");
 }
 
 /**
@@ -228,10 +228,10 @@ document.addEventListener('DOMContentLoaded', function() {
 function updatePasswordVisibility(input, toggle) {
   if (input.type === 'password') {
     input.type = 'text';
-    toggle.src = '/public/img/password-show.png';
+    toggle.src = 'public/img/password-show.png';
   } else {
     input.type = 'password';
-    toggle.src = '/public/img/password-hidden.png';
+    toggle.src = 'public/img/password-hidden.png';
   }
 }
 
@@ -241,14 +241,14 @@ function updatePasswordVisibility(input, toggle) {
  */
 function updateIconVisibility() {
   if (passwordInput.value.length > 0) {
-    togglePassword.src = '/public/img/password-hidden.png';
+    togglePassword.src = 'public/img/password-hidden.png';
   } else {
-    togglePassword.src = '/public/img/lock.png';
+    togglePassword.src = 'public/img/lock.png';
   }
 
   if (confirmPasswordInput.value.length > 0) {
-    toggleConfirmPassword.src = '/public/img/password-hidden.png';
+    toggleConfirmPassword.src = 'public/img/password-hidden.png';
   } else {
-    toggleConfirmPassword.src = '/public/img/lock.png';
+    toggleConfirmPassword.src = 'public/img/lock.png';
   }
 }
