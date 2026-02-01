@@ -11,7 +11,7 @@ function goToSignUp() {
 }
 
 function goToSummary() {
-  location.replace("public/index.html");
+  location.replace("index.html");
 }
 
 /**

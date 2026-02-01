@@ -47,10 +47,10 @@ function renderContactHead(contactSection, contact, contactId) {
           <p class="contact-name-edit mg-block-inline fw-500 no-wrap-text fs-47">${contact.name}</p>
           <div class="contact-section-btn-box fw-400 d-flex-between l-height-19">
             <button class="bg-color-tr txt-center gap-8 b-unset pointer d-flex-center flex-d-row fs-16" onclick="showEditForm('${contactId}')" id="edit-btn">
-              <img class="obj-cover img-24" src="./img/edit.png">Edit
+              <img class="obj-cover img-24" src="public/img/edit.png">Edit
             </button>
             <button class="bg-color-tr txt-center gap-8 b-unset pointer d-flex-center flex-d-row fs-16" onclick="deleteContact('${contactId}')" id="del-btn">
-              <img class="obj-cover img-24" src="./img/delete.png">Delete
+              <img class="obj-cover img-24" src="public/img/delete.png">Delete
             </button>
           </div>
         </div>
@@ -114,10 +114,10 @@ function renderContactButtons(contactId) {
   
   contactSectionBtnBoxResp.innerHTML =  `
     <button class="bg-color-tr txt-center gap-8 b-unset pointer d-flex-center flex-d-row fs-16" onclick="showEditForm('${contactId}')" id="edit-btn">
-      <img class="obj-cover img-24" src="./img/edit.png">Edit
+      <img class="obj-cover img-24" src="public/img/edit.png">Edit
     </button>
     <button class="bg-color-tr txt-center gap-8 b-unset pointer d-flex-center flex-d-row fs-16" onclick="deleteContact('${contactId}')" id="del-btn">
-      <img class="obj-cover img-24" src="./img/delete.png">Delete
+      <img class="obj-cover img-24" src="public/img/delete.png">Delete
     </button>
   `;
 }

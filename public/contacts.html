@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <base href="/projekte/join/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./img/user_logo.png" type="image/png" />
+    <link rel="icon" href="public/img/user_logo.png" type="image/png" />
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/contacts.css" />
     <link rel="stylesheet" href="src/css/contactsani.css" />
@@ -33,7 +33,7 @@
           </div>
           <div id="contact-section" class="pos-abs d-flex flex-d-col gap-21 vis-hidden"></div>
           <a class="arrow-button-resp" onclick="toggleElement('.contactlist-section-responsive', 'd-none')">
-            <img src="./img/arrow-left-line.png" alt="button that leads back to the main page" />
+            <img src="public/img/arrow-left-line.png" alt="button that leads back to the main page" />
           </a>
           <div class="contact-options-menu d-none" onclick="toggleElement('.contact-options-dropdown', 'd-none')">
             <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -68,7 +68,7 @@
         <div class="contactlist-btn-box d-flex-center bg-color-wh">
           <button id="add-contact-btn" class="d-flex-center fs-21 pointer bg-color-dg b-unset bradius10" onclick="showFormField()">
             <p class="f-weight-700 color-wh">Add new contact</p>
-            <img src="./img/person_add.png" class="p-l-16" />
+            <img src="public/img/person_add.png" class="p-l-16" />
           </button>
         </div>
         <div class="contactlist-content">
@@ -124,7 +124,7 @@
         </div>
         <div class="add-contact-content-left-box gap-12 bg-color-dg d-flex-center flex-d-col bradius-lb-30">
           <div class="formfield-logo d-flex item-start pos-abs gap-16">
-            <img src="./img/join_logo.svg" />
+            <img src="public/img/join_logo.svg" />
           </div>
           <h2 class="f-weight-700 color-wh mg-block-inline fs-61 l-height-73">Add contact</h2>
           <p class="fw-400 fs-27 mg-block-inline color-wh l-height-32">Tasks are better with a team!</p>
@@ -132,20 +132,20 @@
         </div>
         <div class="d-flex item-center content-even add-contact-content-right-box">
           <div class="exitBtn pointer pos-abs" onclick="closeFormField()">
-            <img src="./img/Close.png" />
+            <img src="public/img/Close.png" />
           </div>
           <div id="prof-img" class="form-prof-img bradius70 d-flex-center">
-            <img src="./img/Group 13.png" />
+            <img src="public/img/Group 13.png" />
           </div>
           <form id="contact-form" class="pos-abs d-flex flex-d-col gap-32" onsubmit="handleFormSubmit(event)">
             <div class="input-img-div d-flex-center gap-10 pos-rel">
               <input class="bradius10 d-flex item-center pointer fs-20 fw-400 l-height-24" type="text" id="name" name="name" placeholder="Name" required />
-              <img class="pos-abs img-24" src="./img/person.png" />
+              <img class="pos-abs img-24" src="public/img/person.png" />
             </div>
             <div class="input-img-div d-flex-center gap-10 pos-rel">
               <input class="bradius10 d-flex item-center pointer fs-20 fw-400 l-height-24" 
                      type="email" pattern="^[^ @]+@[^ @]+\.[a-zA-Z]{2,}$" id="mail" name="mail" placeholder="Email" required />
-              <img class="pos-abs img-24" src="./img/mail.png" />
+              <img class="pos-abs img-24" src="public/img/mail.png" />
             </div>
             <div class="input-img-div d-flex-center gap-10 pos-rel">
               <input 
@@ -157,17 +157,17 @@
               title="Die Telefonnummer muss mit einem '+' oder '0' beginnen und kann Zahlen und optionale Leerzeichen oder Bindestriche enthalten." 
               required 
               />
-              <img class="pos-abs img-24" src="./img/call.png" />
+              <img class="pos-abs img-24" src="public/img/call.png" />
             </div>
 
             <div class="formfield-btn-box d-flex flex-d-row gap-24">
               <button id="formfield-cancel-btn" class="bradius10 gap-4 d-flex content-even item-center shadow-none bg-color-ww pointer" onclick="closeFormField()" type="button">
                 <p class="fw-400 fs-20 l-height-24 mg-block-inline">Cancel</p>
-                <img class="img-24" src="./img/iconoir_cancel.png" />
+                <img class="img-24" src="public/img/iconoir_cancel.png" />
               </button>
               <button id="formfield-create-btn" class="bradius10 gap-4 d-flex content-even item-center b-unset shadow-none pointer" disabled>
                 <p class="f-weight-700 fs-21 color-wh l-height-24 mg-block-inline">Create contact</p>
-                <img class="img-24" src="./img/check2.png" />
+                <img class="img-24" src="public/img/check2.png" />
               </button>
             </div>
           </form>
@@ -178,7 +178,7 @@
       <div id="edit-contact-section" class="edit-contact-section d-none pos-abs bg-color-ww bradius30 vis-hidden">
         <div class="add-contact-content-left-box gap-12 bg-color-dg d-flex-center flex-d-col bradius-lb-30">
           <div class="formfield-logo d-flex item-start pos-abs gap-16">
-            <img src="./img/join_logo.svg" />
+            <img src="public/img/join_logo.svg" />
           </div>
           <h2 class="f-weight-700 color-wh mg-block-inline fs-61 l-height-73">Edit contact</h2>
           <div class="add-contact-seperator"></div>
@@ -195,31 +195,31 @@
             </svg>
           </div>
           <div class="exitBtn pointer pos-abs" onclick="closeEditField()">
-            <img src="./img/Close.png" />
+            <img src="public/img/Close.png" />
           </div>
           <div id="prof2-img" class="form-prof-img bradius70 d-flex-center"></div>
           <form id="edit-contact-form" class="pos-abs d-flex flex-d-col gap-32">
             <div class="input-img-div d-flex-center gap-10 pos-rel">
               <input class="bradius10 d-flex item-center pointer fs-20 fw-400 l-height-24" type="text" id="edit-name" name="name" placeholder="Name" required/>
-              <img class="pos-abs img-24" src="./img/person.png" />
+              <img class="pos-abs img-24" src="public/img/person.png" />
             </div>
             <div class="input-img-div d-flex-center gap-10 pos-rel">
               <input class="bradius10 d-flex item-center pointer fs-20 fw-400 l-height-24" type="email" id="edit-mail" name="mail" placeholder="Email" required />
-              <img class="pos-abs img-24" src="./img/mail.png" />
+              <img class="pos-abs img-24" src="public/img/mail.png" />
             </div>
             <div class="input-img-div d-flex-center gap-10 pos-rel">
               <input class="bradius10 d-flex item-center pointer fs-20 fw-400 l-height-24" type="tel" id="edit-phone" name="phone" placeholder="Phone" required >
-              <img class="pos-abs img-24" src="./img/call.png" />
+              <img class="pos-abs img-24" src="public/img/call.png" />
             </div>
           </form>
           <div class="editfield-btn-box pos-abs d-flex flex-d-row gap-24">
             <button id="editfield-cancel-btn" class="bradius10 gap-4 d-flex content-even item-center shadow-none bg-color-ww pointer">
               <p class="fw-400 fs-20 l-height-24 mg-block-inline">Delete</p>
-              <img class="img-24" src="./img/iconoir_cancel.png" />
+              <img class="img-24" src="public/img/iconoir_cancel.png" />
             </button>
             <button id="editfield-create-btn" class="bradius10 gap-4 d-flex content-even item-center b-unset shadow-none pointer" onclick="handleEditFormSubmit(event)" disabled>
               <p class="f-weight-700 fs-21 color-wh l-height-24 mg-block-inline">Save</p>
-              <img class="img-24" src="./img/check2.png" />
+              <img class="img-24" src="public/img/check2.png" />
             </button>
           </div>
         </div>
@@ -227,10 +227,10 @@
   </section>
 
       <div id="update-bar" class="d-none update-animation d-flex pos-abs vis-hidden">
-        <img src="./img/success.png" />
+        <img src="public/img/success.png" />
       </div>
       <div>
-        <img class="contacts-arrow d-none" src="./img/arrow-left-line.png" />
+        <img class="contacts-arrow d-none" src="public/img/arrow-left-line.png" />
       </div>
     </section>
   </body>
